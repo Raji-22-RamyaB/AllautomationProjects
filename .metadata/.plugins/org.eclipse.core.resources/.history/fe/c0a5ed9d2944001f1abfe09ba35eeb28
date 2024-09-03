@@ -1,0 +1,28 @@
+package com.xcel.qa.testcases.branchadmin;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import com.xcel.qa.base.BaseTest;
+
+public class BranchAdminStudent extends BaseTest{
+
+	@Test(priority = -1)
+	public void loginTest() {
+		driver.findElement(By.id("username")).sendKeys("premex");
+		driver.findElement(By.id("password")).sendKeys("PremEXUseR@123");
+		driver.findElement(By.id("user-login")).click();
+	}
+	 @Test(priority=0)
+	 public void stud()
+	 {
+		 Actions act=new Actions(driver);
+		 WebElement ele=driver.findElement(By.xpath("//p[text()='STUDENT']"));
+		 act.moveToElement(ele).build().perform();
+		 
+	 }
+	
+	
+}

@@ -1,0 +1,181 @@
+package testCases;
+
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ISelect;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import base.BaseClass;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
+
+public class Profile extends BaseClass {
+	@Test(priority=0)
+
+	public void HomeMenyMyProfile() throws InterruptedException
+	{
+		driver.findElement(By.id("com.guidejunior:id/user_profile_image")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@text='My Profile']")).click();
+		Thread.sleep(5000);
+	}
+	@Test(priority=1)
+	public void myDetails() throws InterruptedException
+	{
+		Thread.sleep(5000);
+		//driver.findElements(By.className("android.widget.ImageView")).get(0).click();
+		//driver.findElement(By.id("com.guidejunior:id/settings_icon")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.id("com.guidejunior:id/edit")).click();
+		Thread.sleep(2000);
+	}
+	@Test(priority=2)
+	public void profilePicture() throws InterruptedException 
+	{
+		Thread.sleep(2000);
+		driver.findElement(By.id("com.guidejunior:id/add_photo_text")).click();
+		//driver.findElements(By.className("android.widget.ImageView")).get(0).click();
+		Thread.sleep(4000);
+
+		driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+		Thread.sleep(2000);
+
+		driver.findElements(By.id("com.guidejunior:id/frame_layout")).get(0).click();
+		Thread.sleep(2500);
+
+		driver.findElement(By.id("com.guidejunior:id/menu_crop")).click();
+		Thread.sleep(4000);
+
+
+		/*MobileElement listitem = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
+				"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().id(\"com.android.packageinstaller:id/permission_allow_button\"));"));// scroll
+																												// down
+		 */
+
+		// vertical
+		/*AndroidElement list1= (AndroidElement)driver.findElementByClassName("android.widget.ImageView");
+		list1.click();
+
+
+		Thread.sleep(2000);
+
+		/*	MobileElement listitem1= (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator( 
+				"new UiScrollable(new UiSelector().scrollIntoView(" + "new UiSelector().text(\"Drag images up for gallery\"));"));
+		listitem1.getLocation();
+		listitem1.click();
+		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+
+//scrollup
+		driver.findElement(MobileBy.AndroidUIAutomator
+				("new UiScrollable(new UiSelector().scrollable(true)).scrollToBeginning(50000)"));
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.findElement(By.id("com.guidejunior:id/arrow_up")).click();
+		Thread.sleep(2000);*/
+
+
+		/*TouchAction touchAction = new TouchAction(driver);
+		touchAction.tap(1280, 1013).perform();*/
+
+
+
+		//scrolling
+		/*String scrollViewContainer_finder = "new UiSelector().resourceIdMatches(\"com.guidejunior:id/preview\")"; // Your_ID=element resource-id
+	    String neededElement_finder = "new UiSelector().text(\"Drag images up for gallery\")";
+	    WebElement abc = driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(" + scrollViewContainer_finder + ")" +
+	            ".scrollIntoView(" + neededElement_finder + ")")); 
+
+	    //swipe
+	    public void swipe(int startX, int startY, int endX, int endY, int msDuration) {
+	        TouchAction touchAction = new TouchAction((PerformsTouchActions) driver);
+	        touchAction.press(PointOption.point(startX, startY))
+	                .waitAction(WaitOptions.waitOptions(Duration.ofMillis(msDuration)))
+	                .moveTo(PointOption.point(endX, endY))
+	                .release();*/
+	}
+
+	@Test(priority=3)
+	public void editOptions() throws InterruptedException
+	{
+		WebElement name=driver.findElement(By.id("com.guidejunior:id/first_name"));
+		name.clear();
+		Thread.sleep(2000);
+		name.sendKeys("Toys");
+		Thread.sleep(2500);
+
+		WebElement name2=driver.findElement(By.id("com.guidejunior:id/last_name"));
+		name2.clear();
+		Thread.sleep(2000);
+		name2.sendKeys("New");
+		Thread.sleep(2500);
+
+
+		driver.findElement(By.id("com.guidejunior:id/dob")).click();
+		Thread.sleep(2000);
+
+		driver.findElement(By.id("com.guidejunior:id/confirm_button")).click();
+		Thread.sleep(2000);
+
+		/*driver.findElement(By.id("com.guidejunior:id/month_navigation_fragment_toggle")).click();
+		Thread.sleep(2000);
+
+		String text="2000";
+		String uiSelector = "new UiSelector().textMatches(\"" + text + "\")";
+		//    WebElement year1=driver.findElementByXPath("//android.widget.TextView[@text='1999']");
+
+		String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(" + uiSelector + ").flingBackward();";
+		// String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(" + uiSelector + ").scrollBackward();";
+		driver.findElement(MobileBy.AndroidUIAutomator(command));
+
+
+
+		MobileElement listitem = (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
+				"new UiScrollable(new UiSelector()).scrollIntoView(" + "new UiSelector().text(\"2000\"));"));
+
+
+		driver.findElement(By.id("com.guidejunior:id/confirm_button")).click();
+		Thread.sleep(2000);
+		 */
+
+		//gender
+		WebElement gender=driver.findElement(By.id("com.guidejunior:id/spn_gender"));
+		Thread.sleep(2000);
+		Select dropdown=new Select(gender);
+		dropdown.selectByIndex(1);
+		Thread.sleep(2000);
+
+
+
+
+		//location
+		driver.findElement(By.id("com.guidejunior:id/pick_home_address")).click();
+		Thread.sleep(2000);
+		//allow
+		driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+		Thread.sleep(3000);
+		//driver.findElement(By.id("com.android.packageinstaller:id/permission_allow_button")).click();
+		//Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@text='Choose this location']")).click();
+		Thread.sleep(2000);
+
+		//updatee
+		driver.findElement(By.id("com.guidejunior:id/update")).click();
+		Thread.sleep(2000);
+	}
+}
+
+
+
+
+

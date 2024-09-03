@@ -1,0 +1,20 @@
+io.cucumber.junit.UndefinedStepException: The step 'Thanons has the Infinity Stones' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Thanons has the Infinity Stones")
+public void thanons_has_the_infinity_stones() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Thanos snaps his fingers")
+public void thanos_snaps_his_fingers() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("half of the living things died")
+public void half_of_the_living_things_died() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

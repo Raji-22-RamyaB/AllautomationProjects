@@ -1,0 +1,66 @@
+package com.xcel.qa.testcases.branchadmin;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import com.xcel.qa.base.BaseTest;
+
+public class BranchAdminMasterData extends BaseTest{
+	@Test(priority = -1)
+	public void loginTest() {
+		driver.findElement(By.id("username")).sendKeys("branchadmin");
+		driver.findElement(By.id("password")).sendKeys("brAdm@iNT!!45");
+		driver.findElement(By.id("user-login")).click();
+	}
+	@Test(priority=0)
+	public void masterDataBranchTime() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		Actions act=new Actions(driver);
+		WebElement data=driver.findElement(By.xpath("//p[text()='MASTER DATA']"));
+		act.moveToElement(data).build().perform();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Branch Time']"))).click();
+		
+		driver.findElement(By.id("edit-timing")).click();
+		Thread.sleep(2000);
+		
+		
+		//WebElement ele=driver.findElement(By.id("branch-in-time"));
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("branch-in-time"))).click();
+
+		WebElement ele1 = driver.findElement(By.id("branch-in-time"));
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].click()", ele1);
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='08:30 AM']"))).click();
+        Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		Thread.sleep(4000);
+		
+		WebElement ele2=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("branch-out-time")));
+		ele2.click();
+		ele2.clear();
+		Thread.sleep(2000);
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='04:00 PM']"))).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("submitBranchTiming")).click();
+		Thread.sleep(2000);
+
+		//ele.click();
+		//ele.clear();
+		//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("branch-in-time"))).click();
+		//input[@id='branch-in-time']
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[text()='08:30 AM']"))).click();
+		//ele.sendKeys("//li[text()='08:30 AM']");
+		
+	}
+}

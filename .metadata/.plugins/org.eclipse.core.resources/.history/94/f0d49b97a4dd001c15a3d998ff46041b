@@ -1,0 +1,32 @@
+package testcase;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.BeforeTest;
+
+import base.BaseClass;
+
+public class Login extends BaseClass{
+	
+	@BeforeTest
+	public void LoginByPin() {
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		driver.findElement(By.id("com.wtcf:id/btn_close")).click();	
+	    driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
+	    driver.findElement(By.xpath("//*[@text='Sign In']")).click();
+	    driver.findElement(By.id("com.wtcf:id/rlClickConsumer")).click();
+	    driver.findElement(By.xpath("//*[@text='India (IN)']")).click();
+	    driver.findElement(By.id("com.wtcf:id/edt_mobile")).sendKeys(properties.getProperty("mobile"));
+	    driver.findElement(By.id("com.wtcf:id/checkbox")).click();
+	    driver.findElement(By.id("com.wtcf:id/have_pin")).click();
+	    //driver.findElement(By.id("com.wtcf:id/have_pin")).sendKeys(properties.getProperty("pin"));
+	    driver.findElement(By.id("com.wtcf:id/txtPinEntry")).click();
+	    driver.findElement(By.id("com.wtcf:id/txtPinEntry")).sendKeys(properties.getProperty("pin"));
+	    driver.findElement(By.id("com.wtcf:id/submit")).click();
+	    
+	    
+	}
+}
+

@@ -1,0 +1,28 @@
+package testversion;
+import java.util.Scanner;
+public class Scanner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+
+		
+
+		  
+
+		       
+
+		            Scanner input = new Scanner(System. in );
+		            int number;
+		            System.out.println("Input number: ");
+		            number = input.nextInt();
+		            System.out.println(number);
+
+
+		        }
+
+		    
+	}
+
+

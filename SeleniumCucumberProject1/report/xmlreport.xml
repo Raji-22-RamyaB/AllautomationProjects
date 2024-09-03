@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.283">
+    <testcase classname="Explaining Hooks" name="Hook scenario Explanation" time="0.466">
+        <system-out><![CDATA[Given Thanons has the Infinity Stones.......................................passed
+When Thanos snaps his fingers...............................................passed
+Then half of the living things died.........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,13 @@
+package com.xcel.qa.testcases.branchadmin;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+
+public class BranchAdminMasterData extends BaseTest{
+	@Test(priority = -1)
+	public void loginTest() {
+		driver.findElement(By.id("username")).sendKeys("branchadmin");
+		driver.findElement(By.id("password")).sendKeys("brAdm@iNT!!45");
+		driver.findElement(By.id("user-login")).click();
+	}
+}

@@ -1,0 +1,32 @@
+package testCases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Multiplelogins {
+	public static void main(String args[]) throws InterruptedException{
+		{
+			
+
+			//Setting webdriver.chrome.driver property/
+			System.setProperty("webdriver.chrome.driver","C:\\chromedriver\\chromedriver.exe");
+
+			//Instantiating driver object and launching browser
+			WebDriver driver=new ChromeDriver();
+
+			//Using get() method to open a webpage
+			driver.get(" ");
+
+			//maximize the window size
+			driver.manage().window().maximize();
+
+			String arr[][]= { {"user1@abc.com","user2@abc.com"} , {"password1","password2"} };
+			int i,j;
+				for(i=0; i<2 ; i++){
+					for(j=0; j<1 ; j++){
+						// Your logic here for login, submitting and logout
+					}
+				}
+			}
+		}
+	}

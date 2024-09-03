@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="login Suite">
+<test name="BothInCorrect">
+<parameter name="username" value="0min1"></parameter>
+<parameter name="password" value="0admin2"></parameter>
+<classes>
+<class name="loginTestCases.BothInCorrect"></class>
+</classes>
+</test>
+<test name="CorrectPassword">
+<parameter name="username" value="1Adm"></parameter>
+<parameter name="password" value="Admin123"></parameter>
+<classes>
+<class name="loginTestCases.CorrectPassword"></class>
+</classes>
+
+</test>
+<test name="CorrectUserName">
+<parameter name="username" value="Admin"></parameter>
+<parameter name="password" value="a2dmin123"></parameter>
+<classes>
+<class name="loginTestCases.CorrectUserName"></class>
+</classes>
+</test>
+
+<test name="BothCorrect">
+<parameter name="username" value="Admin"></parameter>
+<parameter name="password" value="admin123"></parameter>
+<classes>
+<class name="loginTestCases.BothCorrect"></class>
+</classes>
+</test>
+
+
+
+
+</suite>

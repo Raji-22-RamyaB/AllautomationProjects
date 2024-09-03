@@ -1,0 +1,108 @@
+
+package testCases;
+
+import static org.testng.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import base.BaseClass;
+import io.appium.java_client.MobileElement;
+
+public class Dashboard extends BaseClass{
+	MobileElement connect;
+	MobileElement connected;
+	MobileElement askmentor;
+	MobileElement beingmentor;
+	MobileElement requestedmentor; 
+
+	@Test(priority=0)
+	public void home() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		//driver.findElement(By.id("com.guidejunior:id/navigation_bar_item_icon_view")).click();
+		Thread.sleep(2000);
+
+		String ActualTitle=driver.findElement(By.xpath("//*[@text='Hi Rajiiiii.B.K ']")).getText();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		String ExpectedTitle="Hi Rajiiiii.B.K ";
+		Assert.assertEquals(ExpectedTitle, ActualTitle);
+		Thread.sleep(2000);
+
+	}
+	@Test(priority=1)
+	public void search() throws InterruptedException
+	{
+		driver.findElement(By.xpath("//*[@text='search']")).click();
+		Thread.sleep(2000);
+
+		driver.findElement(By.id("com.guidejunior:id/search_bar")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("com.guidejunior:id/search_edit_text")).sendKeys("Avinash");
+		Thread.sleep(2000);
+		driver.findElement(By.id("com.guidejunior:id/row_mentor_name")).click();
+		
+		//driver.findElement(By.xpath("//*[@text='Avinash Kumar Singh ']")).click();
+		Thread.sleep(2000);
+	}
+
+	@Test(priority=2)
+	public void profile()
+	{
+		connect=driver.findElement(By.id("com.guidejunior:id/connect"));
+		connected=driver.findElement(By.id("com.guidejunior:id/connect_label"));
+		if(connected.isDisplayed())
+		{
+			System.out.println("It was already connected");
+		}
+		else
+		{
+			System.out.println("It was not connected");
+			connect.click();
+		}
+	}
+	@Test(priority=3)
+	public void mentor()
+	{
+		beingmentor=driver.findElement(By.xpath("//*[@text='Being Mentored']"));
+		//askmentor=driver.findElement(By.xpath("//*[@text='Ask to be Mentor']"));
+		askmentor=driver.findElement(By.id("com.guidejunior:id/mentor"));
+		requestedmentor=driver.findElement(By.xpath("//*[@text='Requested Mentor']"));
+		//askmentor=driver.findElement(By.xpath("//*[@text='Ask to be Mentor']"));
+		
+		if (askmentor.isDisplayed())
+		{	System.out.println("Ask to be mentor");
+		askmentor.click();
+			
+		}
+		else if(requestedmentor.isDisplayed())
+		{
+			System.out.println("Requested mentor");
+		}
+		else
+		{
+
+			System.out.println("Already beingmentor");
+		}
+	}
+	  @Test(priority=4)
+	 public void getmentoredFor() throws InterruptedException
+	  {
+		  driver.findElement(By.id("com.guidejunior:id/subject_radio_btn")).click();
+		  Thread.sleep(2000);
+		//  driver.findElement(By.xpath("//*[@text='SCIENCE']")).click();
+		  //Thread.sleep(2000);
+		  driver.findElement(By.id("com.guidejunior:id/mentor_action_layout")).click();
+		  Thread.sleep(2000);
+		  
+	  }
+	
+	
+	
+	}
+
+	
+

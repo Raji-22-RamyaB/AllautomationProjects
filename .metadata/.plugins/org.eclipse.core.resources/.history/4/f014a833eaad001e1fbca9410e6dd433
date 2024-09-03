@@ -1,0 +1,38 @@
+package testversion;
+import java.io.InputStream;
+
+public class Scanner {
+
+	public Scanner(InputStream in) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+
+		
+
+		  
+
+		       
+
+		            Scanner input = new Scanner(System. in );
+		            int number;
+		            System.out.println("Input number: ");
+		            number = input.nextInt();
+		            System.out.println(number);
+
+
+		        }
+
+	private int nextInt() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+		    
+	}
+
+

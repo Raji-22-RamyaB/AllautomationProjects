@@ -1,0 +1,33 @@
+  package testcases;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.xcel.qa.base.BaseTest;
+
+public class GetStartedPage extends BaseTest {
+@BeforeTest
+	public void checkForPageLoaded() {
+		String pageTitle = driver.getTitle();
+		String expectedTitle = properties.getProperty("browserTitle");
+		Assert.assertEquals(pageTitle, expectedTitle, "Wrong page loaded");
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver) // Fluent Wait
+				.withTimeout(Duration.ofSeconds(10)).pollingEvery(Duration.ofSeconds(5));
+	}
+
+	
+
+}

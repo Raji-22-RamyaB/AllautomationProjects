@@ -1,0 +1,30 @@
+package com.xcel.qa.testcases.branchadmin;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Test;
+
+import com.xcel.qa.base.BaseTest;
+
+public class BranchAdminMasterData extends BaseTest{
+	@Test(priority = -1)
+	public void loginTest() {
+		driver.findElement(By.id("username")).sendKeys("branchadmin");
+		driver.findElement(By.id("password")).sendKeys("brAdm@iNT!!45");
+		driver.findElement(By.id("user-login")).click();
+	}
+	@Test(priority=0)
+	public void masterDataBranchTime()
+	{
+		Actions act=new Actions(driver);
+		WebElement data=driver.findElement(By.xpath("//p[text()='MASTER DATA']"));
+		act.moveToElement(data).build().perform();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Branch Time']"))).click();
+		
+		driver.findElement(By.id("edit-timing")).click();
+		
+		
+	}
+}

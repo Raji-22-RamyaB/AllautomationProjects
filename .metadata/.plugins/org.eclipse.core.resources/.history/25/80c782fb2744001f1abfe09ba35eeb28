@@ -1,0 +1,22 @@
+package com.xcel.qa.testcases.branchadmin;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+import com.xcel.qa.base.BaseTest;
+
+public class BranchAdminStudent extends BaseTest{
+
+	 @Test
+	 public void stud()
+	 {
+		 Actions act=new Actions(driver);
+		 WebElement ele=driver.findElement(By.xpath("//p[text()='STUDENT']"));
+		 act.moveToElement(ele).build().perform();
+		 
+	 }
+	
+	
+}

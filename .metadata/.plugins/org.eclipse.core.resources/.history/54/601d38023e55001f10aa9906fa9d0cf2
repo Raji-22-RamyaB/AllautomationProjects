@@ -1,0 +1,80 @@
+package com.xcel.qa.testcases.branchadmin;
+
+import java.util.List;
+
+import org.apache.hc.core5.util.Timeout;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import com.xcel.qa.base.BaseTest;
+
+public class BranchAdminStudent extends BaseTest{
+
+	@Test(priority = -1)
+	public void loginTest() throws InterruptedException {
+		driver.findElement(By.id("username")).sendKeys("premex");
+		Thread.sleep(2000);
+		driver.findElement(By.id("password")).sendKeys("PremEXUseR@123");
+		Thread.sleep(2000);;
+		driver.findElement(By.id("user-login")).click();
+		Thread.sleep(2000);
+	}
+	 @Test(priority=0)
+	 public void stud()
+	 {
+		 Actions act=new Actions(driver);
+		 WebElement ele=driver.findElement(By.xpath("//p[text()='STUDENT']"));
+		 act.moveToElement(ele).build().perform();
+		 
+	 }
+	@Test(priority=1, groups="Regform")
+	public void admission()
+	{
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Admission']"))).click();
+	}
+	 @Test(priority=2, groups="Regform")
+	 public void register() throws InterruptedException
+	 {
+		driver.findElement(By.id("first_Name")).sendKeys("Ramya");
+		Thread.sleep(2000);
+		//driver.manage().timeouts().implicitlyWait(Timeout.ofSeconds(20));
+		driver.findElement(By.id("last_Name")).sendKeys("Raji");
+		
+		//dob
+		WebElement cal=driver.findElement(By.id("stud_dob"));
+		cal.click();
+		cal.sendKeys("01-05-2011");
+		
+		
+		//dob
+	/*	driver.findElement(By.id("stud_dob")).click();
+		List<WebElement> months = driver.findElements(By.xpath("//div[@class='DayPicker-Caption']/div"));
+        System.out.println("months count: " + months.size());
+		
+		*/
+		
+	
+	    driver.findElement(By.id("role_numb")).sendKeys("INT5001");
+	    driver.findElement(By.id("admission_no")).sendKeys("INTSL20001");
+		WebElement adm=driver.findElement(By.id("admission_date"));
+		adm.click();
+		adm.sendKeys("09-08-2024");
+		adm.click();
+		driver.findElement(By.id("className")).click();
+		Thread.sleep(2000);
+		
+		Select section=new Select(driver.findElement(By.id("className")));
+		section.selectByValue("528");
+		driver.findElement(By.id("stud_reg_mob")).sendKeys("908990879");	
+		
+		
+		
+		
+		
+		
+	 }
+}

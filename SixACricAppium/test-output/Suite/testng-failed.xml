@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.Settings">
+        <methods>
+          <include name="profile"/>
+          <include name="mymatches"/>
+          <include name="tearDown"/>
+          <include name="playerinsight"/>
+          <include name="setup"/>
+          <include name="myrequests"/>
+          <include name="viewfullcareer"/>
+          <include name="appiumSetup"/>
+          <include name="mytimeline"/>
+          <include name="mytournament"/>
+          <include name="myteams"/>
+          <include name="changepin"/>
+        </methods>
+      </class> <!-- tests.Settings -->
+      <class name="tests.ChatWithUs">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="chatwithus"/>
+        </methods>
+      </class> <!-- tests.ChatWithUs -->
+      <class name="tests.InviteAndEarn">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="inviteAndEarn"/>
+        </methods>
+      </class> <!-- tests.InviteAndEarn -->
+      <class name="tests.AppStatistics">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="appStatistics"/>
+        </methods>
+      </class> <!-- tests.AppStatistics -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="logOutTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="LoginByPin"/>
+          <include name="logInWithOtp"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.RateTheApp">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="rateApp"/>
+        </methods>
+      </class> <!-- tests.RateTheApp -->
+      <class name="tests.Logout">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- tests.Logout -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

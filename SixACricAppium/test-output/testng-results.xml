@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="14" total="35" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-09T13:29:14 IST" name="Suite" finished-at="2022-04-09T13:31:24 IST" duration-ms="129488">
+    <groups>
+    </groups>
+    <test started-at="2022-04-09T13:29:14 IST" name="Test" finished-at="2022-04-09T13:31:24 IST" duration-ms="129488">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginTest@36916eb0]" started-at="2022-04-09T13:29:14 IST" name="setup" finished-at="2022-04-09T13:29:42 IST" duration-ms="28157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="LoginByPin()[pri:0, instance:tests.LoginTest@36916eb0]" started-at="2022-04-09T13:29:42 IST" name="LoginByPin" finished-at="2022-04-09T13:29:53 IST" depends-on-methods="base.BaseClass.setup" duration-ms="10297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginByPin -->
+        <test-method signature="logOutTest()[pri:1, instance:tests.LoginTest@36916eb0]" started-at="2022-04-09T13:29:53 IST" name="logOutTest" finished-at="2022-04-09T13:29:58 IST" duration-ms="5553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutTest -->
+        <test-method signature="logInWithOtp()[pri:2, instance:tests.LoginTest@36916eb0]" started-at="2022-04-09T13:29:58 IST" name="logInWithOtp" finished-at="2022-04-09T13:30:07 IST" duration-ms="8516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInWithOtp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@36916eb0]" started-at="2022-04-09T13:31:24 IST" name="tearDown" finished-at="2022-04-09T13:31:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.ChatWithUs">
+        <test-method signature="chatwithus()[pri:0, instance:tests.ChatWithUs@659499f1]" started-at="2022-04-09T13:30:21 IST" name="chatwithus" finished-at="2022-04-09T13:30:30 IST" duration-ms="9012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chatwithus -->
+      </class> <!-- tests.ChatWithUs -->
+      <class name="tests.Settings">
+        <test-method signature="appiumSetup()[pri:0, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:30:35 IST" name="appiumSetup" finished-at="2022-04-09T13:30:42 IST" duration-ms="7569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appiumSetup -->
+        <test-method signature="profile()[pri:1, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:30:42 IST" name="profile" finished-at="2022-04-09T13:30:51 IST" duration-ms="8310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method signature="viewfullcareer()[pri:2, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:30:51 IST" name="viewfullcareer" finished-at="2022-04-09T13:30:52 IST" duration-ms="1015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewfullcareer -->
+        <test-method signature="playerinsight()[pri:3, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:30:52 IST" name="playerinsight" finished-at="2022-04-09T13:30:55 IST" duration-ms="3617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- playerinsight -->
+        <test-method signature="mymatches()[pri:4, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:30:55 IST" name="mymatches" finished-at="2022-04-09T13:31:00 IST" duration-ms="4166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mymatches -->
+        <test-method signature="mytournament()[pri:5, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:31:00 IST" name="mytournament" finished-at="2022-04-09T13:31:04 IST" duration-ms="4373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mytournament -->
+        <test-method signature="myteams()[pri:6, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:31:04 IST" name="myteams" finished-at="2022-04-09T13:31:05 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myteams -->
+        <test-method signature="mytimeline()[pri:9, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:31:05 IST" name="mytimeline" finished-at="2022-04-09T13:31:11 IST" duration-ms="6328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mytimeline -->
+        <test-method signature="myrequests()[pri:10, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:31:11 IST" name="myrequests" finished-at="2022-04-09T13:31:14 IST" duration-ms="2512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- myrequests -->
+        <test-method signature="changepin()[pri:13, instance:tests.Settings@47e2e487]" started-at="2022-04-09T13:31:14 IST" name="changepin" finished-at="2022-04-09T13:31:19 IST" duration-ms="5502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changepin -->
+      </class> <!-- tests.Settings -->
+      <class name="tests.AppStatistics">
+        <test-method signature="appStatistics()[pri:0, instance:tests.AppStatistics@71a8adcf]" started-at="2022-04-09T13:30:07 IST" name="appStatistics" finished-at="2022-04-09T13:30:12 IST" duration-ms="4985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appStatistics -->
+      </class> <!-- tests.AppStatistics -->
+      <class name="tests.Logout">
+        <test-method signature="logout()[pri:0, instance:tests.Logout@51e69659]" started-at="2022-04-09T13:30:30 IST" name="logout" finished-at="2022-04-09T13:30:35 IST" duration-ms="4422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- tests.Logout -->
+      <class name="tests.InviteAndEarn">
+        <test-method signature="inviteAndEarn()[pri:0, instance:tests.InviteAndEarn@27462a88]" started-at="2022-04-09T13:30:12 IST" name="inviteAndEarn" finished-at="2022-04-09T13:30:15 IST" duration-ms="3050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteAndEarn -->
+      </class> <!-- tests.InviteAndEarn -->
+      <class name="tests.RateTheApp">
+        <test-method signature="rateApp()[pri:0, instance:tests.RateTheApp@82de64a]" started-at="2022-04-09T13:30:15 IST" name="rateApp" finished-at="2022-04-09T13:30:21 IST" duration-ms="6689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rateApp -->
+      </class> <!-- tests.RateTheApp -->
+      <class name="tests.About">
+        <test-method signature="about()[pri:0, instance:tests.About@201a4587]" started-at="2022-04-09T13:31:19 IST" name="about" finished-at="2022-04-09T13:31:21 IST" duration-ms="1339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- about -->
+        <test-method signature="info()[pri:1, instance:tests.About@201a4587]" started-at="2022-04-09T13:31:21 IST" name="info" finished-at="2022-04-09T13:31:22 IST" duration-ms="1561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- info -->
+        <test-method signature="admins()[pri:2, instance:tests.About@201a4587]" started-at="2022-04-09T13:31:22 IST" name="admins" finished-at="2022-04-09T13:31:23 IST" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- admins -->
+        <test-method signature="aboutUs()[pri:3, instance:tests.About@201a4587]" started-at="2022-04-09T13:31:23 IST" name="aboutUs" finished-at="2022-04-09T13:31:24 IST" duration-ms="806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aboutUs -->
+      </class> <!-- tests.About -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

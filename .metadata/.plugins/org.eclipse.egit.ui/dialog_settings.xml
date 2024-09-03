@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="2"/>
+	<item key="GitSelectRepositoryPage.lastRepository" value="F:\SeleniumPrograms\intelschoolwebautomation\.git"/>
+	<list key="EGit.KnownHosts">
+		<item value="3.7.14.210"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+		<item value="git.eclipse.org"/>
+		<item value="gitlab.xcelcorp.com"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="http://gitlab.xcelcorp.com/rajeshwari/jmeterdemo.git"/>
+		<item value="http://3.7.14.210/avinash/cricdostappium"/>
+		<item value="http://3.7.14.210/intelschool/intelschoolwebautomation"/>
+	</list>
+	<section name="GitImportWizard">
+		<item key="GitProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="GitCommitSearchPage">
+		<item key="HISTORY_SIZE" value="0"/>
+	</section>
+</section>

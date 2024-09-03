@@ -1,0 +1,1691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-01T14:35:46 IST" name="Suite" finished-at="2023-11-01T14:36:16 IST" duration-ms="30016">
+    <groups>
+    </groups>
+    <test started-at="2023-11-01T14:35:46 IST" name="Test" finished-at="2023-11-01T14:36:16 IST" duration-ms="30016">
+      <class name="test.three">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.three@1ffaf86]" started-at="2023-11-01T14:36:16 IST" name="setup" finished-at="2023-11-01T14:36:16 IST" duration-ms="66" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.three.setup(three.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testthree()[pri:0, instance:test.three@1ffaf86]" started-at="2023-11-01T14:36:16 IST" name="testthree" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.three.setup(three.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testthree -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.three@1ffaf86]" started-at="2023-11-01T14:36:16 IST" name="teardown" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.three -->
+      <class name="test.four">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.four@6574a52c]" started-at="2023-11-01T14:36:16 IST" name="setup" finished-at="2023-11-01T14:36:16 IST" duration-ms="112" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.four.setup(four.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testfour()[pri:0, instance:test.four@6574a52c]" started-at="2023-11-01T14:36:16 IST" name="testfour" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.four.setup(four.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testfour -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.four@6574a52c]" started-at="2023-11-01T14:36:16 IST" name="teardown" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.four -->
+      <class name="test.two">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.two@13e344d]" started-at="2023-11-01T14:36:16 IST" name="setup" finished-at="2023-11-01T14:36:16 IST" duration-ms="96" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.two.setup(two.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testtwo()[pri:0, instance:test.two@13e344d]" started-at="2023-11-01T14:36:16 IST" name="testtwo" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.two.setup(two.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testtwo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.two@13e344d]" started-at="2023-11-01T14:36:16 IST" name="teardown" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.two -->
+      <class name="test.one">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.one@4659191b]" started-at="2023-11-01T14:35:46 IST" name="setup" finished-at="2023-11-01T14:36:16 IST" duration-ms="29307" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.one.setup(one.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testone()[pri:0, instance:test.one@4659191b]" started-at="2023-11-01T14:36:16 IST" name="testone" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Unable to parse remote response: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:143)
+at base.Base.initializeBrowser(Base.java:39)
+at test.one.setup(one.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to parse: <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/assets/displayhelpservlet.css" media="all"/>
+  <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+  <script src="/assets/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="/assets/displayhelpservlet.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var json = Object.freeze('{"consoleLink": "\u002fgrid\u002fconsole","type": "Grid Hub","class": "org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig","version": "3.141.59"}');
+  </script>
+</head>
+<body>
+
+<div id="content">
+  <div id="help-heading">
+    <h1><span id="logo"></span></h1>
+    <h2>Selenium <span class="se-type"></span>&nbsp;v.<span class="se-version"></span></h2>
+  </div>
+
+  <div id="content-body">
+    <p>
+      Whoops! The URL specified routes to this help page.
+    </p>
+    <p>
+      For more information about Selenium <span class="se-type"></span> please see the
+      <a class="se-docs">docs</a> and/or visit the <a class="se-wiki">wiki</a>.
+      <span id="console-item">
+        Or perhaps you are looking for the Selenium <span class="se-type"></span> <a class="se-console">console</a>.
+      </span>
+    </p>
+    <p>
+      Happy Testing!
+    </p>
+  </div>
+
+  <div>
+    <footer id="help-footer">
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these <a href="https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS">people</a>, and our
+      <a href="http://www.seleniumhq.org/sponsors/">sponsors</a>.
+   </footer>
+  </div>
+ </div>
+
+</body>
+</html>
+at org.openqa.selenium.json.Json.toType(Json.java:57)
+at org.openqa.selenium.json.Json.toType(Json.java:50)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:109)
+... 40 more
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: <. Last 1 characters read: <
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'XSC-10261-RAJES', ip: '192.168.10.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:126)
+at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:141)
+at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+at org.openqa.selenium.json.Json.toType(Json.java:71)
+at org.openqa.selenium.json.Json.toType(Json.java:55)
+... 42 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testone -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.one@4659191b]" started-at="2023-11-01T14:36:16 IST" name="teardown" finished-at="2023-11-01T14:36:16 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.one -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

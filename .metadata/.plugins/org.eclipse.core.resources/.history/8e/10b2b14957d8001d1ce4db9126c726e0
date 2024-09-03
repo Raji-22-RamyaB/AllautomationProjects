@@ -1,0 +1,102 @@
+package testCases;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import base.BaseClass;
+import io.appium.java_client.MobileElement;
+
+public class Ride extends BaseClass{
+	
+	MobileElement pickUp;
+	MobileElement scl;
+	MobileElement timings;
+
+	
+	
+	
+	@Test(priority=0)
+	public void ridePage() throws InterruptedException
+	{
+		//ride
+		driver.findElement(By.id("com.guidejunior:id/rideFragment")).click();
+		Thread.sleep(2000);
+	}
+	@Test(priority=1)
+	public void subscribe() throws InterruptedException
+	{
+	//subscribe now
+    driver.findElement(By.id("com.guidejunior:id/subscribe_now")).click();
+    Thread.sleep(2000);
+	}
+	
+	@Test(priority=2)
+	public void shareRide() throws InterruptedException {
+		//pickuploaction
+	MobileElement pickUp=driver.findElement(By.id("com.guidejunior:id/pickup_location"));
+	MobileElement scl=driver.findElement(By.id("com.guidejunior:id/drop_location"));
+	MobileElement timings=driver.findElement(By.id("com.guidejunior:id/pickup_timing"));
+	
+	}
+	
+	
+		@Test(priority=3)
+		public void checkForInvalidTextField() throws InterruptedException
+		{
+			SoftAssert softAssert=new SoftAssert();
+			driver.findElement(By.id("com.guidejunior:id/update")).click();
+			Thread.sleep(2000);
+			softAssert.assertEquals(pickUp.isDisplayed(), true, "empty message displayed for enter pickuplocation");
+			softAssert.assertEquals(scl.isDisplayed(),                                                                                                    true, "empty message displayed for scl");
+			softAssert.assertNotEquals(timings.isDisplayed(), true, "empty message displayed for timing");
+
+			softAssert.assertAll();
+			Thread.sleep(2000);
+		}
+
+		@Test(priority=3)
+		public void checkvalidTextField() throws InterruptedException
+		{
+			SoftAssert softAssert=new SoftAssert();
+			timings.click();
+			Thread.sleep(2000);
+			//add pickup timings
+			driver.findElement(By.id("com.guidejunior:id/check_box")).click();
+			Thread.sleep(2000);
+			//add pick
+			driver.findElement(By.id("com.guidejunior:id/pickup_time")).click();
+			Thread.sleep(2000);
+			//ok
+			driver.findElement(By.id("com.guidejunior:id/ok_button")).click();
+			Thread.sleep(3000);
+			
+			//add drop timings
+			driver.findElement(By.id("com.guidejunior:id/drop_time")).click();
+			Thread.sleep(2000);
+		
+			//ok
+			driver.findElement(By.id("com.guidejunior:id/ok_button")).click();
+			Thread.sleep(3000);
+			//save
+			driver.findElement(By.id("com.guidejunior:id/submit")).click();
+			Thread.sleep(2000);
+			
+			//pay option
+			driver.findElement(By.id("com.guidejunior:id/yes")).click();
+			Thread.sleep(2000);
+			
+			driver.findElement(By.id("com.guidejunior:id/update")).click();
+			Thread.sleep(2000);
+			softAssert.assertEquals(pickUp.isDisplayed(), true, "empty message displayed for enter pickuplocation");
+			softAssert.assertEquals(scl.isDisplayed(), true, "empty message displayed for scl");
+			softAssert.assertEquals(timings.isDisplayed(), true, "empty message displayed for timing");
+
+			softAssert.assertAll();
+			Thread.sleep(2000);
+		}
+		
+    
+
+	
+}

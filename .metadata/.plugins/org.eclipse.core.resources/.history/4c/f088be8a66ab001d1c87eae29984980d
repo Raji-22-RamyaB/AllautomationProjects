@@ -1,0 +1,59 @@
+package base;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
+import java.util.Properties;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+
+public class BaseClass {
+	public static  AppiumDriver<WebElement> driver;
+	public static Properties properties;
+	public static Wait<AppiumDriver<MobileElement>>wait;
+	public static String appPackage;
+	
+	@BeforeSuite
+	public void setup() throws IOException, InterruptedException {
+		
+		properties = new Properties();
+		FileInputStream inputStream = new FileInputStream((System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\testconfig.properties"));
+		properties.load(inputStream);
+		
+		try {
+			URL url= new URL(properties.getProperty("url"));			
+			appPackage= properties.getProperty("appPackage");
+			
+			DesiredCapabilities dc= new DesiredCapabilities();
+			dc.setCapability("platformName", properties.getProperty("platformName"));
+			dc.setCapability("platformVersion", properties.getProperty("platformVersion"));
+			dc.setCapability("udId", properties.getProperty("udid"));
+			dc.setCapability("deviceName", properties.getProperty("deviceName"));
+		
+			if(properties.getProperty("platformName").equals("Android")){
+				dc.setCapability("appPackage",properties.getProperty("appPackage"));
+				dc.setCapability("appActivity", properties.getProperty("appActivity"));
+			}else {
+				dc.setCapability("app", "location of .app or .ipa file");	
+			}
+			 driver = new AppiumDriver<WebElement>(url, dc);
+			System.out.print("App Started");
+		}catch(MalformedURLException e) {
+			e.printStackTrace();		// It prints the stack trace,name of the exception, and other useful description
+		}
+		Thread.sleep(5000);
+	}
+}

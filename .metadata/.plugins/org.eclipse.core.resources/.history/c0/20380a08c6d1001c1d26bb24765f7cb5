@@ -1,0 +1,236 @@
+ package tests;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+import base.BaseClass;
+import io.appium.java_client.MobileBy;
+
+public class TestingCreateMatch extends BaseClass{
+	@Test(priority=0)
+	public void createMatch() throws InterruptedException
+	{
+		 driver.findElement(MobileBy.AccessibilityId("Open navigation drawer")).click();
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/nav_create_match")).click();
+		 driver.findElement(By.xpath("//*[@text='Date']")).click();
+		 driver.findElement(By.xpath("//*[@text='20']")).click();
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/confirm_button")).click();
+		 
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_text")).clear();
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_text")).sendKeys("5");
+		 driver.findElement(By.id("android:id/text1")).click();
+		 driver.findElement(By.xpath("//*[@text='5']")).click();
+		 Thread.sleep(2000);
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/autocomplete_ground")).click();
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/autocomplete_ground")).sendKeys("chennai chepauk");
+		 
+		 driver.findElement(By.xpath("//*[@text='Enter Ground Location']")).click();
+		 driver.findElement(By.xpath("//*[@text='Enter Ground Location']")).sendKeys("chennai");
+		 
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/autocomplete_city")).click();
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/autocomplete_city")).sendKeys("chennai");
+		driver.navigate().back();
+		 
+		 
+		 /*driver.findElement(By.xpath("//*[@text='Time']")).click();
+		 driver.findElement(By.xpath("//*[@text='3']")).click();
+		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 driver.findElement(By.xpath("//*[@text='30']")).click();
+		 
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/material_clock_period_pm_button")).click();
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/material_timepicker_ok_button")).click();
+		 Thread.sleep(1000);
+	     WebElement ele=driver.findElement(By.xpath("//*[@text='No. of Overs']"));
+		 ele.clear();
+		 ele.click();
+		 ele.sendKeys("5");
+		 
+		 WebElement ele2= driver.findElement(By.xpath("//*[@text='Players per Team']"));
+		 ele2.click();
+		 driver.findElement(By.xpath("//*[text='5']")).click();
+		 
+		 WebElement ele3=driver.findElement(By.xpath("//*[@text='Ground Name']"));
+		 ele3.click();
+		 ele3.sendKeys("chennai chepauk");
+		 
+		 WebElement ele4=driver.findElement(By.xpath("//*[@text='Location']"));
+		 ele4.click();
+		 ele4.sendKeys("chennai");
+		 
+		 driver.findElement(By.id("com.xcelcorp.cricdost:id/img_map")).click();
+		 WebElement ele5=driver.findElement(By.xpath("//*[@text='Town/City']"));
+		 ele5.click();
+		 ele5.sendKeys("chennai");*/
+		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 
+	}
+	   
+	@Test(priority=1)
+	public void selectTeams() throws InterruptedException
+	{
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_team_a")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("royapuram rocker");
+	  driver.findElement(By.xpath("//*[@text='royapuram rockers']")).click();
+	  //driver.findElement(By.xpath("05, Gr Flr, Ambit Tech Park Akshasya Food Court, Ambattur, Sai Nagar, Ambattur Industrial Estate, Chennai, Tamil Nadu 600058, India")).click();
+	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 // driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.xpath("//*[@text='NEXT']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/btn_squad_team_a")).click();
+	  driver.navigate().back();
+	  
+	  driver.findElement(By.xpath("//*[@text='CD NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("aswi");
+	  driver.findElement(By.xpath("//*[@text='Aswini']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='CD NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("raj");
+	  driver.findElement(By.xpath("//*[@text='raji']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='MY NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("Siva Sakth");
+	  driver.findElement(By.xpath("//*[@text='Siva Sakthi']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='MY NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("Mural");
+	  driver.findElement(By.xpath("//*[@text='Murali']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='MY NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("balumahendi");
+	  driver.findElement(By.xpath("//*[@text='balumahendiran']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	 
+	  
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_continue")).click();
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_team_b")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("warrior");
+	  driver.findElement(By.xpath("//*[@text='warriors']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/btn_squad_team_b")).click();
+	  driver.navigate().back();
+	  
+	  driver.findElement(By.xpath("//*[@text='CD NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("SELV");
+	  driver.findElement(By.xpath("//*[@text='SELVA']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='CD NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("SelvaGanapath");
+	  driver.findElement(By.xpath("//*[@text='SelvaGanapathi']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='CD NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("Ragu");
+	  driver.findElement(By.xpath("//*[@text='Ragul']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='MY NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("Vignesh Xc");
+	  driver.findElement(By.xpath("//*[@text='Vignesh Xcel']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_add_player")).click();
+	  
+	  driver.findElement(By.xpath("//*[@text='MY NETWORK']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/edt_search")).sendKeys("vinet");
+	  driver.findElement(By.xpath("//*[@text='vinetha']")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	 
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_continue")).click();
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/btn_squad_team_a")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/captain")).click();
+	  Thread.sleep(2000);
+	  //driver.findElement(By.id("com.xcelcorp.cricdost:id/wicket_keeper")).click();
+	  //driver.findElement(By.xpath("//*[@text='WK']")).click();
+	 // driver.findElement(By.id("com.xcelcorp.cricdost:id/btn_squad_team_a")).click();
+	  //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/wicket_keeper")).click();
+	  Thread.sleep(2000);
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_continue")).click();
+	  
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/btn_squad_team_b")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/captain")).click();
+	  Thread.sleep(2000);
+
+	  
+	  //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  //driver.findElement(By.id("com.xcelcorp.cricdost:id/wicket_keeper")).click();
+	  //driver.findElement(By.xpath("//*[@text='WK']")).click();
+
+	  //driver.findElement(By.id("com.xcelcorp.cricdost:id/btn_squad_team_b")).click();
+	//  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/wicket_keeper")).click();
+	  Thread.sleep(2000);
+
+	  
+	 /* driver.findElement(By.id("com.xcelcorp.cricdost:id/btn_squad_team_b")).click();
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/wicket_keeper")).click();*/
+	  
+	  
+	  
+	 
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_continue")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/txt_next")).click();
+	  driver.findElement(By.id("com.xcelcorp.cricdost:id/positive_button")).click();
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  }
+	  
+	  
+	  
+	}
+	
+		 
+		
+		 
+		 
+		 
+		 
+		 
+	
+
